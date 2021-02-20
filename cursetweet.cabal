@@ -1,0 +1,90 @@
+cabal-version: 1.12
+
+-- This file has been generated from package.yaml by hpack version 0.33.0.
+--
+-- see: https://github.com/sol/hpack
+--
+-- hash: fc8780ebd05879789ac8f96d6463959d6d99b56dc55639002c744e4d1f67a570
+
+name:           cursetweet
+version:        0.1.0.0
+description:    Please see the README on GitHub at <https://github.com/githubuser/cursetweet#readme>
+homepage:       https://github.com/githubuser/cursetweet#readme
+bug-reports:    https://github.com/githubuser/cursetweet/issues
+author:         Author name here
+maintainer:     example@example.com
+copyright:      2021 Author name here
+license:        BSD3
+license-file:   LICENSE
+build-type:     Simple
+extra-source-files:
+    README.md
+    ChangeLog.md
+
+source-repository head
+  type: git
+  location: https://github.com/githubuser/cursetweet
+
+library
+  exposed-modules:
+      Lib
+      Main
+  other-modules:
+      Paths_cursetweet
+  hs-source-dirs:
+      src
+  default-extensions: AllowAmbiguousTypes RankNTypes UnicodeSyntax ScopedTypeVariables StandaloneDeriving EmptyDataDecls FlexibleContexts FlexibleInstances FunctionalDependencies KindSignatures TypeOperators MultiParamTypeClasses PartialTypeSignatures DuplicateRecordFields TupleSections TypeFamilies OverloadedLabels OverloadedStrings DeriveFunctor DeriveGeneric NoImplicitPrelude DataKinds ConstraintKinds UndecidableInstances InstanceSigs Strict PatternSynonyms BlockArguments LambdaCase EmptyDataDeriving TypeOperators ViewPatterns EmptyCase PolyKinds GeneralizedNewtypeDeriving DerivingStrategies
+  ghc-options: -Wno-partial-type-signatures -Wincomplete-patterns -Wincomplete-uni-patterns -Wno-deprecations -Wall -Wcompat -Wincomplete-record-updates -Wincomplete-uni-patterns -Wredundant-constraints -Werror -fplugin=RecordDotPreprocessor
+  build-depends:
+      base >=4.7 && <5
+    , bytestring
+    , containers
+    , record-dot-preprocessor
+    , record-hasfield
+    , tasty
+    , tasty-discover
+    , tasty-hunit
+    , text
+  default-language: Haskell2010
+
+executable cursetweet
+  main-is: Main.hs
+  other-modules:
+      Paths_cursetweet
+  hs-source-dirs:
+      app
+  default-extensions: AllowAmbiguousTypes RankNTypes UnicodeSyntax ScopedTypeVariables StandaloneDeriving EmptyDataDecls FlexibleContexts FlexibleInstances FunctionalDependencies KindSignatures TypeOperators MultiParamTypeClasses PartialTypeSignatures DuplicateRecordFields TupleSections TypeFamilies OverloadedLabels OverloadedStrings DeriveFunctor DeriveGeneric NoImplicitPrelude DataKinds ConstraintKinds UndecidableInstances InstanceSigs Strict PatternSynonyms BlockArguments LambdaCase EmptyDataDeriving TypeOperators ViewPatterns EmptyCase PolyKinds GeneralizedNewtypeDeriving DerivingStrategies
+  ghc-options: -Wno-partial-type-signatures -Wincomplete-patterns -Wincomplete-uni-patterns -Wno-deprecations -Wall -Wcompat -Wincomplete-record-updates -Wincomplete-uni-patterns -Wredundant-constraints -Werror -fplugin=RecordDotPreprocessor -threaded -rtsopts -with-rtsopts=-N
+  build-depends:
+      base >=4.7 && <5
+    , bytestring
+    , containers
+    , cursetweet
+    , record-dot-preprocessor
+    , record-hasfield
+    , tasty
+    , tasty-discover
+    , tasty-hunit
+    , text
+  default-language: Haskell2010
+
+test-suite cursetweet-test
+  type: exitcode-stdio-1.0
+  main-is: Main.hs
+  other-modules:
+      Lib
+  hs-source-dirs:
+      src
+  default-extensions: AllowAmbiguousTypes RankNTypes UnicodeSyntax ScopedTypeVariables StandaloneDeriving EmptyDataDecls FlexibleContexts FlexibleInstances FunctionalDependencies KindSignatures TypeOperators MultiParamTypeClasses PartialTypeSignatures DuplicateRecordFields TupleSections TypeFamilies OverloadedLabels OverloadedStrings DeriveFunctor DeriveGeneric NoImplicitPrelude DataKinds ConstraintKinds UndecidableInstances InstanceSigs Strict PatternSynonyms BlockArguments LambdaCase EmptyDataDeriving TypeOperators ViewPatterns EmptyCase PolyKinds GeneralizedNewtypeDeriving DerivingStrategies
+  ghc-options: -Wno-partial-type-signatures -Wincomplete-patterns -Wincomplete-uni-patterns -Wno-deprecations -Wall -Wcompat -Wincomplete-record-updates -Wincomplete-uni-patterns -Wredundant-constraints -Werror -fplugin=RecordDotPreprocessor -threaded -rtsopts -with-rtsopts=-N
+  build-depends:
+      base >=4.7 && <5
+    , bytestring
+    , containers
+    , record-dot-preprocessor
+    , record-hasfield
+    , tasty
+    , tasty-discover
+    , tasty-hunit
+    , text
+  default-language: Haskell2010
