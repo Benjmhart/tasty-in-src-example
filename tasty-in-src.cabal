@@ -4,7 +4,7 @@ cabal-version: 1.12
 --
 -- see: https://github.com/sol/hpack
 --
--- hash: 605b620f231a7fa868e150cf3e88dfe9591159113f0e31bed98caef5dc953497
+-- hash: 9c69285500889f5ab24197336dd060db8e68cf846c0368406bff92b7ffedc838
 
 name:           tasty-in-src
 version:        0.1.0.0
@@ -74,11 +74,8 @@ test-suite tasty-in-src-test
   type: exitcode-stdio-1.0
   main-is: Main.hs
   other-modules:
-      Lib
-      Spec
       Paths_tasty_in_src
   hs-source-dirs:
-      src
       test
   default-extensions: AllowAmbiguousTypes BlockArguments ConstraintKinds DataKinds DerivingStrategies DeriveFunctor DeriveGeneric DuplicateRecordFields EmptyCase EmptyDataDecls EmptyDataDeriving FlexibleContexts FlexibleInstances FunctionalDependencies GeneralizedNewtypeDeriving InstanceSigs KindSignatures LambdaCase MultiParamTypeClasses NoImplicitPrelude PartialTypeSignatures PatternSynonyms PolyKinds OverloadedLabels OverloadedStrings RankNTypes ScopedTypeVariables StandaloneDeriving Strict UndecidableInstances UnicodeSyntax TupleSections TypeFamilies TypeOperators ViewPatterns
   ghc-options: -Wno-partial-type-signatures -Wincomplete-patterns -Wincomplete-uni-patterns -Wno-deprecations -Wall -Wcompat -Wincomplete-record-updates -Wincomplete-uni-patterns -Wredundant-constraints -Werror -fplugin=RecordDotPreprocessor -threaded -rtsopts -with-rtsopts=-N
@@ -91,6 +88,7 @@ test-suite tasty-in-src-test
     , tasty
     , tasty-discover
     , tasty-hunit
+    , tasty-in-src
     , text
     , unordered-containers
   default-language: Haskell2010
