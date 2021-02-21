@@ -1,6 +1,6 @@
-name:                cursetweet
+name:                tasty-in-src
 version:             0.1.0.0
-github:              "githubuser/cursetweet"
+github:              "githubuser/tasty-in-src"
 license:             BSD3
 author:              "Author name here"
 maintainer:          "example@example.com"
@@ -17,45 +17,44 @@ extra-source-files:
 # To avoid duplicated efforts in documentation and dealing with the
 # complications of embedding Haddock markup inside cabal files, it is
 # common to point users to the README.md file.
-description:         Please see the README on GitHub at <https://github.com/githubuser/cursetweet#readme>
+description:         Please see the README on GitHub at <https://github.com/githubuser/tast-in-src#readme>
 
 default-extensions:
   - AllowAmbiguousTypes
-  - RankNTypes
-  - UnicodeSyntax
-  - ScopedTypeVariables
-  - StandaloneDeriving
+  - BlockArguments
+  - ConstraintKinds
+  - DataKinds
+  - DerivingStrategies
+  - DeriveFunctor
+  - DeriveGeneric
+  - DuplicateRecordFields
+  - EmptyCase
   - EmptyDataDecls
+  - EmptyDataDeriving
   - FlexibleContexts
   - FlexibleInstances
   - FunctionalDependencies
+  - GeneralizedNewtypeDeriving
+  - InstanceSigs
   - KindSignatures
-  - TypeOperators
+  - LambdaCase
   - MultiParamTypeClasses
+  - NoImplicitPrelude
   - PartialTypeSignatures
-  - DuplicateRecordFields
-  - TupleSections
-  - TypeFamilies
+  - PatternSynonyms
+  - PolyKinds
   - OverloadedLabels
   - OverloadedStrings
-  - DeriveFunctor
-  - DeriveGeneric
-  - NoImplicitPrelude
-  - DataKinds
-  - ConstraintKinds
-  - UndecidableInstances
-  - InstanceSigs
+  - RankNTypes
+  - ScopedTypeVariables
+  - StandaloneDeriving
   - Strict
-  - PatternSynonyms
-  - BlockArguments
-  - LambdaCase
-  - EmptyDataDeriving
+  - UndecidableInstances
+  - UnicodeSyntax
+  - TupleSections
+  - TypeFamilies
   - TypeOperators
   - ViewPatterns
-  - EmptyCase
-  - PolyKinds
-  - GeneralizedNewtypeDeriving
-  - DerivingStrategies
 
 ghc-options:
   - -Wno-partial-type-signatures -Wincomplete-patterns -Wincomplete-uni-patterns
@@ -68,18 +67,19 @@ dependencies:
 - base >= 4.7 && < 5
 - bytestring
 - containers
-- record-dot-preprocessor
-- record-hasfield
 - tasty
 - tasty-hunit
 - tasty-discover
 - text
+- record-dot-preprocessor
+- record-hasfield
+- unordered-containers
 
 library:
   source-dirs: src
 
 executables:
-  cursetweet:
+  tasty-in-src:
     main:                Main.hs
     source-dirs:         app
     ghc-options:
@@ -87,15 +87,14 @@ executables:
     - -rtsopts
     - -with-rtsopts=-N
     dependencies:
-    - cursetweet
+    - tasty-in-src
 
 tests:
-  cursetweet-test:
+  tasty-in-src-test:
     main:                Main.hs
     source-dirs:         
       - src
-    other-modules:
-      - Lib
+      - test
     ghc-options:
     - -threaded
     - -rtsopts

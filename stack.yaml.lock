@@ -3,11 +3,46 @@
 # For more information, please see the documentation at:
 #   https://docs.haskellstack.org/en/stable/lock_files
 
-packages: []
+packages:
+- completed:
+    name: tweet-hs
+    version: 0.5.3.2
+    git: https://github.com/Benjmhart/command-line-tweeter.git
+    pantry-tree:
+      size: 1291
+      sha256: 894b5c14ecba1d5a780d9f4ceba230f13fa11b24e2c356216c78945661eb366c
+    commit: 92efdcafc455acbd1cfea55220dd63294d95fb6b
+  original:
+    git: https://github.com/Benjmhart/command-line-tweeter.git
+    commit: 92efdcafc455acbd1cfea55220dd63294d95fb6b
+- completed:
+    name: megaparsec
+    version: 5.3.1
+    git: https://github.com/mrkkrp/megaparsec.git
+    pantry-tree:
+      size: 2308
+      sha256: 3d67a3400b63b7459b724c3556f27b1508bcb92e0ba2bf755b5aeb019e370ae3
+    commit: d10d0f2d491d1b6631f3a171dcb0b7da545266a5
+  original:
+    git: https://github.com/mrkkrp/megaparsec.git
+    commit: d10d0f2d491d1b6631f3a171dcb0b7da545266a5
+- completed:
+    hackage: QuickCheck-2.10.1@sha256:3a136430e9e0541355d6c0962111c87e139895af2d4f031a8023b494f77c5032,5485
+    pantry-tree:
+      size: 1862
+      sha256: f6ceb792b64ddcea9283dbaebbba3e0519e1ab982b32487be37634b02faa633c
+  original:
+    hackage: QuickCheck-2.10.1@sha256:3a136430e9e0541355d6c0962111c87e139895af2d4f031a8023b494f77c5032,5485
+- completed:
+    hackage: exceptions-0.8.3@sha256:31626cabb107a00224da8df21c50b3df42d7f1a66edccfe44bdf551303b9cfcd,1942
+    pantry-tree:
+      size: 906
+      sha256: 677fb70651c2092ef9ae3296063be3e80579caeffdffc78645f849c3d69aef80
+  original:
+    hackage: exceptions-0.8.3@sha256:31626cabb107a00224da8df21c50b3df42d7f1a66edccfe44bdf551303b9cfcd,1942
 snapshots:
 - completed:
-    size: 563103
-    url: https://raw.githubusercontent.com/commercialhaskell/stackage-snapshots/master/lts/17/4.yaml
-    sha256: f11e2153044f5f71ea7b1c9398f4721f517c9bd37642ed769647b896564021f3
-  original:
-    url: https://raw.githubusercontent.com/commercialhaskell/stackage-snapshots/master/lts/17/4.yaml
+    size: 532381
+    url: https://raw.githubusercontent.com/commercialhaskell/stackage-snapshots/master/lts/16/11.yaml
+    sha256: 1f43c4ad661a114a4f9dd4580988f30da1208d844c097714f5867c52a02e0aa1
+  original: lts-16.11

@@ -1,0 +1,96 @@
+cabal-version: 1.12
+
+-- This file has been generated from package.yaml by hpack version 0.33.0.
+--
+-- see: https://github.com/sol/hpack
+--
+-- hash: 605b620f231a7fa868e150cf3e88dfe9591159113f0e31bed98caef5dc953497
+
+name:           tasty-in-src
+version:        0.1.0.0
+description:    Please see the README on GitHub at <https://github.com/githubuser/tast-in-src#readme>
+homepage:       https://github.com/githubuser/tasty-in-src#readme
+bug-reports:    https://github.com/githubuser/tasty-in-src/issues
+author:         Author name here
+maintainer:     example@example.com
+copyright:      2021 Author name here
+license:        BSD3
+license-file:   LICENSE
+build-type:     Simple
+extra-source-files:
+    README.md
+    ChangeLog.md
+
+source-repository head
+  type: git
+  location: https://github.com/githubuser/tasty-in-src
+
+library
+  exposed-modules:
+      Lib
+      Spec
+  other-modules:
+      Paths_tasty_in_src
+  hs-source-dirs:
+      src
+  default-extensions: AllowAmbiguousTypes BlockArguments ConstraintKinds DataKinds DerivingStrategies DeriveFunctor DeriveGeneric DuplicateRecordFields EmptyCase EmptyDataDecls EmptyDataDeriving FlexibleContexts FlexibleInstances FunctionalDependencies GeneralizedNewtypeDeriving InstanceSigs KindSignatures LambdaCase MultiParamTypeClasses NoImplicitPrelude PartialTypeSignatures PatternSynonyms PolyKinds OverloadedLabels OverloadedStrings RankNTypes ScopedTypeVariables StandaloneDeriving Strict UndecidableInstances UnicodeSyntax TupleSections TypeFamilies TypeOperators ViewPatterns
+  ghc-options: -Wno-partial-type-signatures -Wincomplete-patterns -Wincomplete-uni-patterns -Wno-deprecations -Wall -Wcompat -Wincomplete-record-updates -Wincomplete-uni-patterns -Wredundant-constraints -Werror -fplugin=RecordDotPreprocessor
+  build-depends:
+      base >=4.7 && <5
+    , bytestring
+    , containers
+    , record-dot-preprocessor
+    , record-hasfield
+    , tasty
+    , tasty-discover
+    , tasty-hunit
+    , text
+    , unordered-containers
+  default-language: Haskell2010
+
+executable tasty-in-src
+  main-is: Main.hs
+  other-modules:
+      Paths_tasty_in_src
+  hs-source-dirs:
+      app
+  default-extensions: AllowAmbiguousTypes BlockArguments ConstraintKinds DataKinds DerivingStrategies DeriveFunctor DeriveGeneric DuplicateRecordFields EmptyCase EmptyDataDecls EmptyDataDeriving FlexibleContexts FlexibleInstances FunctionalDependencies GeneralizedNewtypeDeriving InstanceSigs KindSignatures LambdaCase MultiParamTypeClasses NoImplicitPrelude PartialTypeSignatures PatternSynonyms PolyKinds OverloadedLabels OverloadedStrings RankNTypes ScopedTypeVariables StandaloneDeriving Strict UndecidableInstances UnicodeSyntax TupleSections TypeFamilies TypeOperators ViewPatterns
+  ghc-options: -Wno-partial-type-signatures -Wincomplete-patterns -Wincomplete-uni-patterns -Wno-deprecations -Wall -Wcompat -Wincomplete-record-updates -Wincomplete-uni-patterns -Wredundant-constraints -Werror -fplugin=RecordDotPreprocessor -threaded -rtsopts -with-rtsopts=-N
+  build-depends:
+      base >=4.7 && <5
+    , bytestring
+    , containers
+    , record-dot-preprocessor
+    , record-hasfield
+    , tasty
+    , tasty-discover
+    , tasty-hunit
+    , tasty-in-src
+    , text
+    , unordered-containers
+  default-language: Haskell2010
+
+test-suite tasty-in-src-test
+  type: exitcode-stdio-1.0
+  main-is: Main.hs
+  other-modules:
+      Lib
+      Spec
+      Paths_tasty_in_src
+  hs-source-dirs:
+      src
+      test
+  default-extensions: AllowAmbiguousTypes BlockArguments ConstraintKinds DataKinds DerivingStrategies DeriveFunctor DeriveGeneric DuplicateRecordFields EmptyCase EmptyDataDecls EmptyDataDeriving FlexibleContexts FlexibleInstances FunctionalDependencies GeneralizedNewtypeDeriving InstanceSigs KindSignatures LambdaCase MultiParamTypeClasses NoImplicitPrelude PartialTypeSignatures PatternSynonyms PolyKinds OverloadedLabels OverloadedStrings RankNTypes ScopedTypeVariables StandaloneDeriving Strict UndecidableInstances UnicodeSyntax TupleSections TypeFamilies TypeOperators ViewPatterns
+  ghc-options: -Wno-partial-type-signatures -Wincomplete-patterns -Wincomplete-uni-patterns -Wno-deprecations -Wall -Wcompat -Wincomplete-record-updates -Wincomplete-uni-patterns -Wredundant-constraints -Werror -fplugin=RecordDotPreprocessor -threaded -rtsopts -with-rtsopts=-N
+  build-depends:
+      base >=4.7 && <5
+    , bytestring
+    , containers
+    , record-dot-preprocessor
+    , record-hasfield
+    , tasty
+    , tasty-discover
+    , tasty-hunit
+    , text
+    , unordered-containers
+  default-language: Haskell2010

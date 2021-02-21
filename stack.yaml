@@ -17,8 +17,8 @@
 #
 # resolver: ./custom-snapshot.yaml
 # resolver: https://example.com/snapshots/2018-01-01.yaml
-resolver:
-  url: https://raw.githubusercontent.com/commercialhaskell/stackage-snapshots/master/lts/17/4.yaml
+
+resolver: lts-16.11
 
 # User packages to be built.
 # Various formats can be used as shown in the example below.
@@ -40,8 +40,14 @@ packages:
 # - git: https://github.com/commercialhaskell/stack.git
 #   commit: e7b331f14bcffb8367cd58fbfc8b40ec7642100a
 #
-# extra-deps: []
-
+extra-deps:
+  - git: https://github.com/Benjmhart/command-line-tweeter.git
+    commit: 92efdcafc455acbd1cfea55220dd63294d95fb6b
+  - git: https://github.com/mrkkrp/megaparsec.git
+    commit: d10d0f2d491d1b6631f3a171dcb0b7da545266a5
+  - QuickCheck-2.10.1@sha256:3a136430e9e0541355d6c0962111c87e139895af2d4f031a8023b494f77c5032,5485
+  - exceptions-0.8.3@sha256:31626cabb107a00224da8df21c50b3df42d7f1a66edccfe44bdf551303b9cfcd,1942
+  
 # Override default flag values for local packages and extra-deps
 # flags: {}
 
